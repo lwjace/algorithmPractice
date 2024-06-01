@@ -15,3 +15,16 @@ for i in range(N):
         zero += 1
     else:
         minusPq.put(data)
+
+sum = 0
+
+while plusPq.qsize() > 1:
+    first = plusPq.get() * -1
+    second = plusPq.get() * -1
+    sum += first * second
+
+if plusPq.qsize() > 0:
+    sum += plusPq.get() * -1
+
+while minusPq.qsize() > 1:
+    first = minusPq.get()
