@@ -28,3 +28,10 @@ if plusPq.qsize() > 0:
 
 while minusPq.qsize() > 1:
     first = minusPq.get()
+    second = minusPq.get()
+    sum += first * second
+if minusPq.qsize() > 0:
+    if zero == 0:
+        sum += minusPq.get()
+sum += one
+print(sum)
