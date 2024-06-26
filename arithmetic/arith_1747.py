@@ -12,3 +12,12 @@ for i in range(2, int(math.sqrt(len(A))+1)):
 
 def isPalindrome(target):
     temp = list(str(target))
+    s = 0
+    e = len(temp) - 1
+    while (s < e):
+        if temp[s] != temp[e]:
+            return False
+        s += 1
+        e -= 1
+    return True
+i = N
