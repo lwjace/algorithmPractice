@@ -5,3 +5,9 @@ def gcd(a, b):
          return gcd(b, a % b)
 
 a, b = map(int, input().split())
+result = gcd(a, b)
+
+while result > 0:
+     print(1, end ='')
+     result -= 1
+     
