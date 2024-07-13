@@ -26,3 +26,10 @@ for i in range(N -1):
 
 D[0] = lcm
 DFS(0)
+mgcd = D[0]
+
+for i in range(1, N):
+    mgcd = gcd(mgcd, D[i])
+
+for i in range(N):
+    print(int(D[i]) // mgcd(), end = ' ')
