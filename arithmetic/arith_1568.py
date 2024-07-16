@@ -6,4 +6,9 @@ def gcd(a, b):
     else:
         return gcd(b, a % b)
     
-    
+def Execute(a, b):
+    ret = [0] * 2
+    if b == 0:
+        ret[0] =1
+        ret[1] =0
+        return ret
