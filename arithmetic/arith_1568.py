@@ -12,3 +12,10 @@ def Execute(a, b):
         ret[0] =1
         ret[1] =0
         return ret
+    q = a // b
+    v = Execute(b, a % b)
+    ret[0] = v[1]
+    ret[1] = v[0] -v[1]*q
+    return ret
+
+mgcd = gcd(a, b)
