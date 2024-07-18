@@ -19,3 +19,11 @@ def Execute(a, b):
     return ret
 
 mgcd = gcd(a, b)
+
+if c % mgcd != 0:
+    print(-1)
+else:
+    mok = int(c / mgcd)
+    ret = Execute(a, b)
+    print(ret[0] * mok, end = ' ')
+    print(ret[1] * mok)
