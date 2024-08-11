@@ -17,3 +17,13 @@ def BFS(v):
             if visited[i] == -1:
                 visited[i] = visited[now_node] + 1
                 queue.append(i)
+
+for _ in range(M):
+    S, E = map(int, input().split())
+    A[S].append(E)
+
+BFS(X)
+
+for i in range(N+1):
+    if visited[i] == K:
+        answer.append(i)
