@@ -16,3 +16,11 @@ def BFS(v):
                 visited[i] = True
                 answer[i] += 1
                 queue.append(i)
+
+for _ in range(M):
+    S, E = map(int, input().split())
+    A[S].append(E)
+
+for i in range(1, N+1):
+    visited = [False] * (N+1)
+    BFS(i)
