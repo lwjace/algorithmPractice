@@ -24,3 +24,7 @@ for _ in range(M):
 for i in range(1, N+1):
     visited = [False] * (N+1)
     BFS(i)
+
+maxVal = 0
+for i in range(1, N+1):
+    maxVal = max(maxVal, answer[i])
