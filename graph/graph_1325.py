@@ -28,3 +28,7 @@ for i in range(1, N+1):
 maxVal = 0
 for i in range(1, N+1):
     maxVal = max(maxVal, answer[i])
+
+for i in range(1, N+1):
+    if maxVal == answer[i]:
+        print(i, end= ' ')
