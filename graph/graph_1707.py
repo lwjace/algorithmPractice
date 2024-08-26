@@ -4,4 +4,7 @@ input = sys.stdin.readline
 N = int(input())
 IsEven = True
 
-def DFS(node)
+def DFS(node):
+    global IsEven
+    visited[node] = True
+    for i in A[node]:
