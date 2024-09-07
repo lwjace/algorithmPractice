@@ -13,3 +13,11 @@ def DFS(node):
             DFS(i)
         elif check[node] == check[i]:
             IsEven = False
+
+for _ in range(N):
+    V, E = map(int, input().split())
+    A = [[] for _ in range(V+1)]
+    visited = [False] * (V+1)
+    check = [0] * (V + 1)
+    IsEven =True
+    
