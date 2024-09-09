@@ -21,3 +21,16 @@ for _ in range(N):
     check = [0] * (V + 1)
     IsEven =True
     
+    for i in range(E):
+        Start, End = map(int, input().split())
+        A[Start].append(End)
+        A[End].append(Start)
+    
+    for i in range(1, V+1):
+        if IsEven:
+            DFS(i)
+
+        if IsEven:
+            print("Yes")
+        else:
+            print("No")
