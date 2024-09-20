@@ -12,3 +12,4 @@ def BFS():
     visited[0][0] = True
     while queue:
         now_Node = queue.popleft()
+        A = now_Node[0]
