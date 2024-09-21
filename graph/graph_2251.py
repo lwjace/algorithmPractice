@@ -13,3 +13,7 @@ def BFS():
     while queue:
         now_Node = queue.popleft()
         A = now_Node[0]
+        B = now_Node[1]
+        C = now[2] - A - B
+        for k in range(6):
+            next = [A, B, C]
