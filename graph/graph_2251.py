@@ -17,3 +17,6 @@ def BFS():
         C = now[2] - A - B
         for k in range(6):
             next = [A, B, C]
+            next[Receiver[k]] += next [Sender[k]]
+            next[Sender[k]] = 0
+            if next[Receiver[k]] > now [Receiver[k]]:
