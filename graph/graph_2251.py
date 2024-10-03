@@ -20,3 +20,7 @@ def BFS():
             next[Receiver[k]] += next [Sender[k]]
             next[Sender[k]] = 0
             if next[Receiver[k]] > now [Receiver[k]]:
+                next[Sender[k]] = next[Receiver[k]] - now[Receiver[k]]
+                next[Receiver[k]] = now[Receiver[k]]
+            if not visited[next[0]][next[1]]:
+                visited[next[0]][next[1]] = True
