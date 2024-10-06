@@ -24,3 +24,9 @@ def BFS():
                 next[Receiver[k]] = now[Receiver[k]]
             if not visited[next[0]][next[1]]:
                 visited[next[0]][next[1]] = True
+
+BFS()
+
+for i in range(len(answer)):
+    if answer[i]:
+        print(i, end= ' ')
