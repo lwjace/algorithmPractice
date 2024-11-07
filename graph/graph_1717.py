@@ -23,3 +23,14 @@ def union(a, b):
     b = find(b)
     if a != b:
         parent[b] = a
+
+def checkSame(a, b):
+    a = find(a)
+    b = find(b)
+    if a == b:
+        return True
+    return False
+
+for i in range(0, N+1):
+    parent[i] = i
+    
