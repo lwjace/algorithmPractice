@@ -34,3 +34,12 @@ def checkSame(a, b):
 for i in range(0, N+1):
     parent[i] = i
     
+for i in range(M):
+    question, a, b = map(int, input().split())
+    if question == 0:
+        union(a, b)
+    else:
+        if checkSame(a,b):
+            print("YES")
+        else:
+            print("NO")
